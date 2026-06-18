@@ -1,0 +1,33 @@
+# Core image processing
+opencv-python>=4.8
+numpy>=1.24
+Pillow>=10.0,<12.0
+
+# VLM
+torch>=2.2
+torchvision
+accelerate
+transformers>=4.40
+qwen-vl-utils
+
+# Handwriting OCR (TrOCR)
+# transformers already covers this; model weights auto-downloaded
+
+# LaTeX formula OCR (Pix2Tex)
+pix2tex[cli]
+
+# Chemical structure recognition
+molscribe
+DECIMER>=2.4
+
+# Chemistry NER
+chemdataextractor2
+
+# Cheminformatics / validation
+rdkit
+
+# Data / utilities
+pandas==2.2.2
+requests==2.32.4
+matplotlib
+scipy
