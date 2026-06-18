@@ -114,7 +114,10 @@ class MolScribeBackend:
     hand-drawn chemical structure images to SMILES.
     """
 
-    def __init__(self, device: str = "cuda"):
+    def __init__(self, device: str = "auto"):
+        if device == "auto":
+            import torch
+            device = "cuda" if torch.cuda.is_available() else "cpu"
         from molscribe import MolScribe as _MolScribe
         import huggingface_hub
         ckpt_path = huggingface_hub.hf_hub_download(

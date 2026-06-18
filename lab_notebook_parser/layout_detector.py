@@ -27,7 +27,8 @@ from PIL import Image
 
 REGION_TYPES = {
     "heading", "text", "table", "table_cell",
-    "structure_drawing", "formula", "observation", "unknown"
+    "structure_drawing", "reaction_scheme", "molecular_structure",
+    "formula", "observation", "unknown"
 }
 
 
@@ -307,6 +308,8 @@ def draw_layout_regions(img_bgr: np.ndarray,
         "table": (255, 165, 0),
         "table_cell": (200, 200, 0),
         "structure_drawing": (255, 0, 255),
+        "reaction_scheme": (200, 0, 200),
+        "molecular_structure": (180, 0, 255),
         "formula": (0, 255, 255),
         "observation": (100, 149, 237),
         "unknown": (128, 128, 128),

@@ -267,6 +267,8 @@ Symbol key for this notebook page:
   RDE = rotating disk electrode
   LiTFSI = lithium bis(trifluoromethanesulfonyl)imide
   12-crown-4 = macrocyclic ether that coordinates Li⁺
+  T@ = temperature at a given point (e.g. "→ T@ 22.4°C" means temperature reached 22.4°C)
+  ω = rotation speed (e.g. ω = 1600 rpm)
 """
 
 
