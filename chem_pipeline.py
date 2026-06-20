@@ -473,6 +473,12 @@ def stage5_summary(cfg: Config,
         f"=== REACTION SCHEME TRANSCRIPTIONS ===\n{schemes_blob or '[none]'}\n\n"
         f"=== EXTRACTED ENTITIES (NER) ===\n{ner_blob}\n\n"
         f"=== STRUCTURE SMILES (OCSR) ===\n{smiles_blob}\n"
+        f"Note: Important rule: Do NOT read tables row-by-row unless the table is "
+        f"clearly a normal row-wise table. Many lab notebook tables are visually "
+        "partitioned into multiple vertical blocks\n"
+        f"For these tables, treat each vertical block as a separate table and "
+        f"process it independently. Read both row-wise and column-wise to "
+        f"ensure you capture all values."
     )
     schema = ExperimentSummary.model_json_schema()
     try:
