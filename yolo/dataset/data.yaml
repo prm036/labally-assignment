@@ -1,0 +1,5 @@
+path: /home/rpx2985/finals/yolo/dataset
+train: /home/rpx2985/finals/yolo/dataset/images/train
+val: /home/rpx2985/finals/yolo/dataset/images/val
+nc: 2
+names: ['chemical_structure', 'reaction_scheme']
